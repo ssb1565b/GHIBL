@@ -2,18 +2,93 @@
 @import url(reset.css);
 
 * {box-sizing: border-box;}
+/* ----------------------------------------------- */
+#sect6 h2{margin-bottom: 30px;}
+h2{font-size: 36px;}
+p.name{
+margin-top: 50px;    
+color: #F9B748;
+font-size: 26px;
+}
+
+#sect6 ul{
+display: flex;
+flex-wrap: wrap;}
+ 
+#sect6 ul li img{
+    vertical-align: top; 
+    width: 100%;}
+
+#sect6 figure{position: relative}
+#sect6 .dim{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+background: rgba(0,0,0,.5);
+}
+#sect6 ul li{position: relative;}
+#sect6 .desc{position: absolute;
+bottom: 25px;
+left: 30px;
+color: white;}
+#sect6 .like span{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(/img/sect6_heart.png) no-repeat;
+    background-position: center;
+    background-size:contain;}
+
+
+/* ----------------------------------------------- */
 
 /* 모바일 */
 @media screen and (max-width:767px) {
-    
+    h2{font-size: 32px;text-align: center;}
+    p.name{font-size: 22px;text-align: center;}
+
+    #sect6 li{width: 100%;}
+    #sect6 .soje{font-size: 16px;margin-bottom: 2px;}
+    #sect6 .deje{font-size: 24px; font-weight: 600;margin-bottom: 10px;}
+    #sect6 .like{font-size: 16px;}
+    #sect6 .like span{
+        display: inline-block;
+        width: 17px;
+        height: 13px;
+        margin-right: 5px;
+        background: url(/img/sect6_heart.png) no-repeat;
+        background-position: center;
+        background-size:contain;}
+    #sect6 ul{
+            flex-wrap: wrap;}
 }
 
 /* 태블릿 */
 @media screen and (min-width:768px) {
-    
+    h2{font-size: 32px;}
+    p.name{
+    color: #F9B748;
+    font-size: 22px;
+    }
+
+    #sect6 .soje{font-size: 18px;margin-bottom: 2px;}
+    #sect6 .deje{font-size: 26px; font-weight: 600;margin-bottom: 15px;}
+    #sect6 .like{font-size: 20px;}
+    #sect6 .like span{
+        display: inline-block;
+        width: 18px;
+        height: 16px;
+        margin-right: 5px;
+        background: url(/img/sect6_heart.png) no-repeat;
+        background-position: center;
+        background-size:contain;}
 }
 
 /* 데스크탑 */
 @media screen and (min-width:1288px) {
+    .inner{width: 1200px; margin: auto;}
     
 }
