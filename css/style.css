@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
+section{margin-bottom:50px}
+
 /* sect2-------------------------------------------------- */
 #sect2 .inner{
     display: flex;
@@ -375,13 +377,14 @@
     content: '';
     position: absolute;
     left: 0;
-    top: -44px;
+    top: -52px;
     width: 331px;
-    height: 475px;
+    height: 483px;
     background: rgba(0, 0, 0, 0.4);
     transform: scale(1.1);
     z-index: -999;
 }
+
 
 #sect5 .slideInner {
     display: none;
@@ -442,19 +445,25 @@
     display: none;
 }
 
-p.name{color: #F9B748;}
+#sect5 .swiper-wrapper { 
+    padding: 40px;
+}
+
+
 /* --------------sect6-------------------------------------------- */
 #sect6 h2{margin-bottom: 30px;}
-h2{font-size: 36px;}
-p.name{
+#sect6 h2{font-size: 36px;}
+#sect6 p.name{
 margin-top: 50px;    
 color: #F9B748;
 font-size: 26px;
 }
 #sect6 ul{
-    display: flex;
-    flex-wrap: wrap;
+   display: grid;
+grid-template-columns: repeat(2,1fr);
 }
+
+
 #sect6 ul li img{
     vertical-align: top; 
     width: 100%;}
@@ -506,31 +515,81 @@ color: white;}
     display: flex; align-items: center;}
 #sect7 .btn span{margin-right: 5px;}
 #sect7 .inner > h2{font-size: 36px; }
-/* -----------------------------------------footer------------------ */
+/* #sect8 ------------------------------------------------------- */
+#sect8 ul {z-index: 10;}
+#sect8 ul li:nth-child(2) {margin: 50px 0;}
+#sect8 .name {color: #f9b748;}
+#sect8 h3 {cursor: pointer;}
 
-footer{background: #222223;padding:50px 0;}
-.footNav li.lv1 a{font-size: 24px;color: white;margin-bottom: 20px;}
+#sect8 h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+    cursor: pointer;}
+
+#sect8 .more img {margin-right: 10px;}
+#sect8 .movie {
+    position: relative;
+    margin-top: 10px;
+    background-image: url(../img/sect8_maru.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;}
+
+#sect8 .movie::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000072;
+    position: absolute;
+    top: 0;  left: 0;}
+
+#sect8 .movie::before {
+    content: '';
+    background-image: url(../img/sect3_btn_white.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);}
+#sect8 .movie,ul {margin-top: 50px;}
+#sect8 .date {margin-right: 10px;}
+#sect8 .date,
+.view {color: #999999;}
+#sect8 .mobileMore {display: none;}
+
+/* footer ------------------------------------------------------- */
+footer {
+    background: #222223;
+    padding: 50px 0;
+    margin-top: 100px;}
+.footNav li.lv1 a {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;}
 .footNav ul.lv2 {margin-top: 10px;}
-.footNav ul.lv2 a{font-size: 18px;color: #BEBEBE;}
-
-
-.footNav{display: flex; justify-content: space-between;}
-footer .sns{width: 200px;
+.footNav ul.lv2 a {font-size: 18px;    color: #BEBEBE;}
+.footNav {display: flex;    justify-content: space-between;}
+footer .sns {
+    width: 200px;
     display: flex;
     justify-content: space-between;
-align-items: center;}
-.foot .info{
-width: 40%;}
-.foot .copy{color: white;font-size: 14px;
-}
-.foot .copy p{width: 540px;margin: 10px 0;}
-footer .foot{
+    align-items: center;}
+.foot .info {width: 40%;}
+.foot .copy {
+    color: white;
+    font-size: 14px;}
+.foot .copy p {
+    width: 540px;
+    margin: 10px 0;}
+footer .foot {
     margin-top: 50px;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.copy p.nhn{color: #8A9098;}
+    align-items: center;}
+.copy p.nhn {color: #8A9098;}
 
 
 
@@ -538,6 +597,7 @@ footer .foot{
 /* -------------------------------------------------------------------------- */
 /* 모바일 */
 @media screen and (max-width:767px) {
+    .inner {width: 380px; margin: auto; text-align: center; }
    /* sect2----------------------------------------------- */
    #sect2 figure{
     display: none;
@@ -589,9 +649,15 @@ p.name {
 /* ------------------sect6------------------------------------------------ */
 h2{font-size: 32px;text-align: center;}
 p.name{font-size: 22px;text-align: center;}
-#sect6 li{width: 100%;}
+#sect6 .dim{text-align: left;}
+#sect6 ul {
+    display:block;
+    grid-template-rows: auto;
+}
+#sect6 .inner h2 { font-size: 30px;}
+
 #sect6 .soje{font-size: 16px;margin-bottom: 2px;}
-#sect6 .deje{font-size: 24px; font-weight: 600;margin-bottom: 10px;}
+#sect6 .deje{font-size: 22px; font-weight: 600;margin-bottom: 10px;}
 #sect6 .like{font-size: 16px;}
 #sect6 .like span{
     display: inline-block;
@@ -643,41 +709,63 @@ p.name{font-size: 22px;text-align: center;}
     }
 
 
- /* ------------------footer------------------------------------------------ */         
-  .footNav{flex-wrap: wrap;} 
-  .footNav li.lv1{width: 100%;
-      text-align: center;
-      margin-bottom: 30px;
-  }
-  .footNav ul.lv2{display: none;} 
-  footer .foot{
-  flex-wrap: wrap;
-  width: 100%;
-  }
-  h3{width: 100%; text-align: center;order:2}
-  h3 img{width: 100%;}
-  .foot .copy{text-align: center; }
-  .foot .copy p{
-      width: 90%;
-      margin: 10px auto;
-      color: #8A9098;
-  }
-  .foot .info{margin: auto;
-      width: 70%;
-      order:1 ;
-  }
- footer .sns{margin: auto; margin-bottom: 15px;}
-
-
+ /* #sect8 ------------------------------------------------------- */
+ #sect8 .inner {width: 380px; margin: auto;}
+ #sect8 .name {font-size: 30px;}
+ #sect8 h2 {font-size: 30px;}
+ #sect8 h3 {
+     font-size: 22px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;}
+ #sect8 h4 {font-size: 20px;}
+ #sect8 .name, h2,.right {text-align: center;}
+ #sect8 .more {display: none;}
+ #sect8 .movie {width: 100%; height: 371px; }
+ #sect8 .movie::before {width: 10%; height: 14%;}
+ #sect8 .teaser, .news { margin-top: 50px;}
+ #sect8 .mobileMore {
+     display: block;
+     margin-top: 50px;}
+ #sect8 .mobileMore a {
+     display: block;
+     border: 1px solid #F9B748;
+     padding: 20px;
+     color: #F9B748;
+     text-align: center;    }
+/* footer ------------------------------------------------------- */
+footer .inner{width: 380px; margin: auto;}
+ footer .footNav { flex-wrap: wrap;}
+ footer .footNav li.lv1 {
+     width: 100%;
+     text-align: center;
+     margin-bottom: 30px;    }
+ footer .footNav ul.lv2 {display: none;}
+ footer .foot {flex-wrap: wrap; width: 100%;}
+ footer h3 {
+     width: 100%;
+     text-align: center;
+     order: 2}
+ footer h3 img {width: 100%;}
+ footer .foot .copy {text-align: center;}
+ footer .foot .copy p {
+     width: 90%;
+     margin: 10px auto;
+     color: #8A9098;}
+ footer .foot .info {
+     margin: auto;
+     width: 70%;
+     order: 1;}
+ footer .sns {
+     margin: auto;
+     margin-bottom: 15px;}
     
 }
 
 /* 태블릿 */
 @media screen and (min-width:768px) {
   /* ------------sect2-------------- */
-  .inner {
-    width: 568px
-}
+.inner { width: 568px}
 
 #sect2 p.intro2{
     width: 100%;
@@ -957,13 +1045,14 @@ p.name{font-size: 22px;text-align: center;}
 }
 
 /* ------------sect6---------------------------------------- */
-h2{font-size: 32px;}
-p.name{
-color: #F9B748;
-font-size: 22px;
-}
+#sect6 .inner{ width: 568px; margin: auto;}
+
+
 #sect6 .soje{font-size: 18px;margin-bottom: 2px;}
-#sect6 .deje{font-size: 26px; font-weight: 600;margin-bottom: 15px;}
+#sect6 .deje{font-size: 26px; 
+    font-weight: 600;
+    margin-bottom: 15px;}
+    
 #sect6 .like{font-size: 20px;}
 #sect6 .like span{
     display: inline-block;
@@ -973,6 +1062,7 @@ font-size: 22px;
     background: url(/img/sect6_heart.png) no-repeat;
     background-position: center;
     background-size:contain;}
+    
 /* ------------sect7-------------- */
 p.name{font-size: 22px;}
 #sect7 .inner>h2 {
@@ -987,9 +1077,43 @@ p.name{font-size: 22px;}
     color: #999;
     width: 110px;
     height: 40px;
-    padding-left: 20px;
-}
-
+    padding-left: 20px;}
+/* #sect8 ------------------------------------------------------- */
+#sect8 .inner{width: 568px; margin: auto;}
+#sect8 .right {
+    display: flex;
+    justify-content: space-between;}
+#sect8 .movie,
+ul {margin-top: 30px;}
+#sect8 .news {margin-top: 50px;}
+#sect8 .wd {width: 100%;}
+#sect8 .movie {
+    width: 100%; height: 571px;}
+#sect8 .name {font-size: 22px;}
+#sect8 h2 {font-size: 30px;}
+#sect8 h3 {font-size: 22px;}
+#sect8 h4 {font-size: 20px; }
+#sect8 .date,
+.view {font-size: 16px;}
+#sect8 .more a {
+    font-size: 16px;
+    display: block;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+    color: #999999;
+    padding: 6px 15px;    }
+#sect8 .movie::before {
+    width: 6%;
+    height: 9%; }
+/* ---footer------------------------------ */
+footer .inner{width: 568px; margin: auto;}
+footer .lv1{width: 24%;text-align: center;}
+footer .footNav .lv1 a{ font-size: 18px; letter-spacing: -2px ; }
+.footNav ul.lv2 a {font-size: 16px;}
+.foot h3{width: 40%;}
+.foot h3 img{width: 100%;}
+.foot .info {width: 60%; }
+.foot .info .copy p{width: 320px;}
 
 }
     
@@ -1203,8 +1327,9 @@ p.name{font-size: 22px;}
     #sect5 .wd{width:1200px;}
 
  /* ------------sect6------------------------------ */
- #sect6 .inner{width: 1200px; margin: auto;
- }
+    #sect6 .inner{width: 1200px; margin: auto; }
+
+
  /* ------------sect7-------------- */
  #sect7 .product {
      display: flex;
@@ -1213,8 +1338,25 @@ p.name{font-size: 22px;}
  #sect7 .product li:nth-child(n+3) a img {
      margin-top: 0px;
  }
- /* --------------------footer--------------------------------------- */
- footer .inner{width: 1200px; margin: auto;}
+/* #sect8 ------------------------------------------------------- */
+#sect8 .inner {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;}
+#sect8 .name {font-size: 26px;}
+#sect8 h2 {font-size: 36px;}
+#sect8 .wd {width: 45%;}
+#sect8 .movie {width: 100%; height: 75%;}
+#sect8 .news { margin-top: 0px;}
+#sect8 .more a {font-size: 20px;}
+#sect8 .movie::before {width: 9%;  height: 14%;}
+/* ---------------------- */
+footer .inner{width: 1200px; margin: auto;}
+footer .lv1{width: 24%; text-align: left;}
+.footNav li.lv1 a {font-size: 24px;}
+.footNav ul.lv2 a {font-size: 18px;}
+.foot .info {width: 40%; }
+.foot .info .copy p{width: auto;}
 
- 
 }
