@@ -1,94 +1,226 @@
 @charset "UTF-8";
 @import url(reset.css);
 
-* {box-sizing: border-box;}
-/* ----------------------------------------------- */
-#sect6 h2{margin-bottom: 30px;}
-h2{font-size: 36px;}
-p.name{
-margin-top: 50px;    
-color: #F9B748;
-font-size: 26px;
+* {box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+/* ------------sect2-------------- */
+#sect2 .inner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding:100px 0;
+    margin: auto;}
+#sect2 .inner figure{position:absolute;  right:-60px; height: 180px; width: 180px;}
+#sect2 .inner figure img{height: 100%;}
+#sect2 .desc h2{font-size: 36px; }
+#sect2 p.intro{
+    font-size: 20px;
+    font-weight:500;
+    color: #7cb0bb;
+    padding-top: 33px;}
+#sect2 p.intro2{
+    line-height: 1.8;
+    font-size: 18px;
+    padding-top: 15px;}
+/* ------------sect4--------------- */
+#sect4 article.sen .sticky{
+    height: auto; width: 50%;
+    background-image: url(img/sect4_sen_bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sect4 article.sen .txt{width: 50%;}
+/* ------------sect5--------------- */
+#sect5 {
+    padding: 100px 0;
 }
 
-#sect6 ul{
-display: flex;
-flex-wrap: wrap;}
- 
-#sect6 ul li img{
-    vertical-align: top; 
-    width: 100%;}
+#sect5 .wd {
+    position: relative;
+}
 
-#sect6 figure{position: relative}
-#sect6 .dim{
+#sect5 .btn {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-background: rgba(0,0,0,.5);
+    width: 130px;
+    top: 50px;
+    right: 0;
 }
-#sect6 ul li{position: relative;}
-#sect6 .desc{position: absolute;
-bottom: 25px;
-left: 30px;
-color: white;}
-#sect6 .like span{
-    display: inline-block;
-    width: 18px;
-    height: 16px;
-    margin-right: 5px;
-    background: url(/img/sect6_heart.png) no-repeat;
-    background-position: center;
-    background-size:contain;}
 
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+}
 
-/* ----------------------------------------------- */
+#sect5 .swiper-slide div>img {
+    width: 331px;
+    height: 483px;
+    cursor: pointer;
+    vertical-align: top;
+    position: relative;
+}
+
+#sect5 .slideInner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 331px;
+    height: 483px;
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+    z-index: -999;
+}
+
+#sect5 .slideInner {
+    display: none;
+    position: absolute;
+    width: 340px;
+    height: 483px;
+    bottom: 0px;
+    left: 0;
+    color: #ffffff;
+    padding: 340px 20px 20px 20px;
+    z-index: 999;
+}
+
+#sect5 .swiper-slide:hover .slideInner {
+    display: block;
+}
+
+#sect5 .swiper-slide:hover .bigimg {
+    width: 331px;
+    height: 483px;
+    transform: scale(1.1);
+}
+
+.bigimg.bigon .play {
+    width: 50px;
+    height: 50px;
+}
+
+.play img {
+    width: 100%;
+}
+
+#sect5 .title {
+    font-size: 30px;
+    letter-spacing: -1.8px;
+}
+
+#sect5 .desc,
+.time {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+
+    margin: 10px 0 20px 0;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+}
+/* ------------sect7-------------- */
+
+p.name{color: #F9B748;}
+#sect7 .inner {position: relative; margin: auto; }
+#sect7 .product{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    text-align: center;
+    margin: 50px 0;}
+#sect7 .product a{width: 20%; }
+#sect7 .product a img{width: 100%;}
+#sect7 .product li:nth-child(n+3) a img{ margin-top: 50px;}
+#sect7 .product h6{font-size: 16px; font-weight: 300; color: #999; margin-top: 28px;}
+#sect7 .product h4{font-size: 20px; font-weight: 400;  }
+#sect7 .product p{font-size: 20px; font-weight: 600; margin-top: 12px;}
+#sect7 .btn{
+    cursor: pointer;
+    position: absolute; 
+    display: flex; align-items: center;}
+#sect7 .btn span{margin-right: 5px;}
+#sect7 .inner > h2{font-size: 36px; }
 
 /* 모바일 */
 @media screen and (max-width:767px) {
-    h2{font-size: 32px;text-align: center;}
-    p.name{font-size: 22px;text-align: center;}
-
-    #sect6 li{width: 100%;}
-    #sect6 .soje{font-size: 16px;margin-bottom: 2px;}
-    #sect6 .deje{font-size: 24px; font-weight: 600;margin-bottom: 10px;}
-    #sect6 .like{font-size: 16px;}
-    #sect6 .like span{
-        display: inline-block;
-        width: 17px;
-        height: 13px;
-        margin-right: 5px;
-        background: url(/img/sect6_heart.png) no-repeat;
-        background-position: center;
-        background-size:contain;}
-    #sect6 ul{
-            flex-wrap: wrap;}
+    .inner {width: 380px; text-align: center; }
+    /* ------------sect2-------------- */
+    #sect2 figure{display: none;}
+    #sect2 p.intro{text-align: left; letter-spacing: -1px; }
+    #sect2 p.intro2{ text-align: left;
+        width: 100%;}
+    #sect2 .desc h2 {
+        font-size: 30px;
+    }
+    /* ------------sect5-------------- */
+    .wd {text-align: center;}
+    .flexBox {display: block;}
+    .sect5title h2{font-size: 30px; margin-bottom: 50px;}
+    #sect5 .btn {
+        display: none;
+    }
+    /* ------------sect7-------------- */
+   
+    p.name{font-size: 22px;}
+    
+    #sect7 .inner h2{font-size: 30px;}
+    #sect7 .product h6{font-size: 14x;}
+    #sect7 .product h4{font-size: 18px; width: 180px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+    #sect7 .product p{font-size: 18px;}
+    #sect7 .btn{
+        position: relative;
+        width: 380px; height: 60px;
+        border: 1px solid #F9B748;
+        color: #F9B748; font-size: 22px;}
+    #sect7 .btn p{position: absolute; left: 50%; transform: translateX(-50%);}
+    #sect7 .btn span{display: none;}
 }
 
 /* 태블릿 */
 @media screen and (min-width:768px) {
-    h2{font-size: 32px;}
-    p.name{
-    color: #F9B748;
-    font-size: 22px;
+    /* ------------sect2-------------- */
+    .inner {width: 568px}
+    #sect2 p.intro2{
+        width: 100%;}
+    #sect2 .desc h2 {
+        font-size: 32px;
     }
-
-    #sect6 .soje{font-size: 18px;margin-bottom: 2px;}
-    #sect6 .deje{font-size: 26px; font-weight: 600;margin-bottom: 15px;}
-    #sect6 .like{font-size: 20px;}
-    #sect6 .like span{
-        display: inline-block;
-        width: 18px;
-        height: 16px;
-        margin-right: 5px;
-        background: url(/img/sect6_heart.png) no-repeat;
-        background-position: center;
-        background-size:contain;}
+    /* ------------sect5-------------- */
+    #sect5 .wd {
+        width: 568px;
+        margin: 0 auto 50px;
+    }
+    .sect5title h2{font-size: 32px;}
+    /* ------------sect7-------------- */
+    p.name{font-size: 22px;}
+    #sect7 .inner > h2{font-size: 32px;}
+    #sect7 .btn{
+        right: 0; top: 40px;
+        border: 1px solid #999; 
+        border-radius: 20px;  color: #999;
+        width: 110px; height: 40px; padding-left: 20px;
+    }
 }
-
+    
 /* 데스크탑 */
 @media screen and (min-width:1288px) {
-    .inner{width: 1200px; margin: auto;}
+    .inner {width: 1200px}
+    p.name{font-size: 26px;}
+    /* ------------sect2-------------- */
+    #sect2 .inner figure{position: static; width: 40%;}
+    #sect2 .inner figure img{width: 100%; height: auto;}
+    #sect2 p.intro{
+        font-size: 24px;}
+    #sect2 p.intro2{
+        width: 700px;}
+    #sect2 .desc h2 {
+            font-size: 36px;
+    }
+    /* ------------sect5-------------- */
+
+    #sect5 .wd{width:1200px;}
+    /* ------------sect7-------------- */
     
+    #sect7 .product{display: flex; justify-content: space-between;}
+    #sect7 .product li:nth-child(n+3) a img{ margin-top: 0px;}
 }
