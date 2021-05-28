@@ -356,6 +356,69 @@
             </div>
         </div>
     </section>
+
+    <section id="sect6">
+        <div class="inner">
+            <p class="name">My Page</p>
+            <h2>지브리 덕후를 위한 추천작</h2>
+            <ul>
+                <li class="dimBg">
+                    <figure>
+                        <img src="img/sect6_1.png" alt="">
+                        <div class="dim ">
+                            <div class="desc">
+                                <p class="soje">하울의 움직이는 성</p>
+                                <p class="deje">소피의 저주는 사실 축복이었다?</p>
+                                <p class="like"><span></span>500</p>
+                            </div>
+                        </div>
+                    </figure>
+                    
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/sect6_2.png" alt="">
+                        <div class="dim">
+                            <div class="desc">
+                                <p class="soje">고양이의 보은</p>
+                                <p class="deje">나의 시간을 살아간다는것!</p>
+                                <p class="like"><span></span>288</p>
+                            </div>
+                        </div>
+                    </figure>
+                    
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/sect6_3.png" alt="">
+                        <div class="dim">
+                            <div class="desc">
+                            <p class="soje">버량위의 포뇨</p>
+                            <p class="deje">애니메이션으로 보는 인면어의 괴담</p>
+                            <p class="like"><span></span>151</p>
+                            </div>
+                        </div>
+                    </figure>
+                    
+                </li> 
+                <li>
+                    <figure>
+                        <img src="img/sect6_4.png" alt="">
+                        <div class="dim">
+                            <div class="desc">
+                                <p class="soje">이웃집 토토로</p>
+                                <p class="deje">이웃집에 거대한 고양이가 산다?</p>
+                                <p class="like"><span></span>614</p>
+                            </div>
+                        </div>
+                    </figure>
+                   
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
     <section id="sect7">
         <div class="inner">
             <p class="name">Store</p>
@@ -391,10 +454,71 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="inner">
+          
+                <ul class="footNav">
+                    <li class="lv1"><a href="#">카테고리</a>
+                        <ul class="lv2">
+                            <li><a href="#">홈</a></li>
+                            <li><a href="#">지브리 작품</a></li>
+                            <li><a href="#">영화 랭킹</a></li>
+                            <li><a href="#">지브리 OST</a></li>
+                            <li><a href="#">스토어</a></li>
+                            <li><a href="#">영화뉴스</a></li>
+                        </ul>
+                    </li>
+                    <li class="lv1"><a href="#">개인정보 처리방침</a>
+                        <ul class="lv2">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">책임의 한계와 법적고지</a></li>
+                            <li><a href="#">게시물운영원칙</a></li>
+                            <li><a href="#">서비스 약관/정책</a></li>
+                            <li><a href="#">권리침해신고</a></li>
+            
+                        </ul>
+                    </li>
+                    <li class="lv1"><a href="#">협업사이트</a>
+                        <ul class="lv2">
+                            <li><a href="#">지브리 미술관</a></li>
+                            <li><a href="#">NETFLIX</a></li>
+                            <li><a href="#">디즈니 (블루레이/DVD)</a></li>
+                        </ul>
+                    </li>
+                    <li class="lv1"><a href="#">MEMBER JOIN</a>
+                        <ul class="lv2">
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+           
+            <div class="foot">
+                <h3><img src="img/footer_logo.png" alt=""></h3>
+                <div class="info">
+                    <div class="sns">
+                        <a href="#"><img src="img/footer_face.png" alt=""></a>
+                        <a href="#"><img src="img/footer_ytu.png" alt=""></a>
+                        <a href="#"><img src="img/footer_blg.png" alt=""></a>
+                        <a href="#"><img src="img/footer_inst.png" alt=""></a>
+                    </div>
+                    <div class="copy">
+                        <p>위 내용에 대한 저작권 및 법적 책임은 저작권자 또는
+                            제공처에 있으며,</br> 이를 무단으로 이용하는 경우
+                            저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+                        <p class="nhn">© 2005-2021 STUDIO GHIBLI Inc. · 이용 약관 · 의견 등 · RSS 피드</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     
     <script src="script/jquery-3.6.0.js"></script>
     <script src="script/swiper-bundle.min.js"></script>
     <script>
+     // silde---------------------------------------------------------   
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             slidesPerView: 6,
@@ -408,7 +532,12 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-
+    // sect6 ul li---------------------------------------------------------
+        $('#sect6 ul li').removeClass('dimBg')
+            $('#sect6 ul li').mouseenter(function(){
+                $('#sect6 ul li').removeClass('dimBg')
+                $(this).addClass('dimBg')
+        })
     </script>
 </body>
 

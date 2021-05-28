@@ -2,7 +2,7 @@
 @import url(reset.css);
 
 * {box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
-/* ------------sect2-------------- */
+/* ------------sect2------------------------------------------------------------ */
 #sect2 .inner{
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     line-height: 1.8;
     font-size: 18px;
     padding-top: 15px;}
-/* ------------sect4--------------- */
+/* ------------sect4---------------------------------------------------- */
 #sect4 article.sen .sticky{
     height: auto; width: 50%;
     background-image: url(img/sect4_sen_bg);
@@ -29,7 +29,7 @@
     background-size: cover;
 }
 #sect4 article.sen .txt{width: 50%;}
-/* ------------sect5--------------- */
+/* ------------sect5---------------------------------------------------------- */
 #sect5 {
     padding: 100px 0;
 }
@@ -119,7 +119,84 @@
     border-top: 1px solid #ffffff;
     padding-top: 10px;
 }
-/* ------------sect7-------------- */
+/* --------------sect6-------------------------------------------- */
+#sect6 h2{margin-bottom: 30px;}
+h2{font-size: 36px;}
+p.name{
+margin-top: 50px;    
+color: #F9B748;
+font-size: 26px;
+}
+#sect6 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#sect6 ul li img{
+    vertical-align: top; 
+    width: 100%;}
+
+#sect6 figure{position: relative}
+#sect6 .dim{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+background: rgba(0,0,0,.5);
+display: none;
+}
+#sect6 ul li.dimBg .dim{display: block;}
+
+#sect6 ul li{
+    position: relative;
+    cursor: pointer;
+}
+#sect6 .desc{position: absolute;
+bottom: 25px;
+left: 30px;
+color: white;}
+#sect6 .like span{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(/img/sect6_heart.png) no-repeat;
+    background-position: center;
+    background-size:contain;}
+
+
+
+footer{background: #222223;padding:50px 0;}
+.footNav li.lv1 a{font-size: 24px;color: white;margin-bottom: 20px;}
+.footNav ul.lv2 {margin-top: 10px;}
+.footNav ul.lv2 a{font-size: 18px;color: #BEBEBE;}
+
+
+.footNav{display: flex; justify-content: space-between;}
+footer .sns{width: 200px;
+    display: flex;
+    justify-content: space-between;
+align-items: center;}
+.foot .info{
+width: 40%;}
+.foot .copy{color: white;font-size: 14px;
+}
+.foot .copy p{width: 540px;margin: 10px 0;}
+footer .foot{
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.copy p.nhn{color: #8A9098;}
+
+
+
+
+
+
+
+/* ------------sect7----------------------------------------------------- */
 
 p.name{color: #F9B748;}
 #sect7 .inner {position: relative; margin: auto; }
@@ -141,6 +218,9 @@ p.name{color: #F9B748;}
 #sect7 .btn span{margin-right: 5px;}
 #sect7 .inner > h2{font-size: 36px; }
 
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 /* 모바일 */
 @media screen and (max-width:767px) {
     .inner {width: 380px; text-align: center; }
@@ -159,7 +239,53 @@ p.name{color: #F9B748;}
     #sect5 .btn {
         display: none;
     }
-    /* ------------sect7-------------- */
+
+    /* ------------------sect6------------------------------------------------ */
+    h2{font-size: 32px;text-align: center;}
+    p.name{font-size: 22px;text-align: center;}
+
+    #sect6 li{width: 100%;}
+
+    #sect6 .soje{font-size: 16px;margin-bottom: 2px;}
+    #sect6 .deje{font-size: 24px; font-weight: 600;margin-bottom: 10px;}
+    #sect6 .like{font-size: 16px;}
+    #sect6 .like span{
+        display: inline-block;
+        width: 17px;
+        height: 13px;
+        margin-right: 5px;
+        background: url(/img/sect6_heart.png) no-repeat;
+        background-position: center;
+        background-size:contain;}
+    /* #sect6 ul{
+            flex-wrap: wrap;}  */
+
+    .footNav{flex-wrap: wrap;} 
+    .footNav li.lv1{width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footNav ul.lv2{display: none;} 
+    footer .foot{
+    flex-wrap: wrap;
+    width: 100%;
+    }
+    h3{width: 100%; text-align: center;order:2}
+    h3 img{width: 100%;}
+    .foot .copy{text-align: center; }
+    .foot .copy p{
+        width: 90%;
+        margin: 10px auto;
+        color: #8A9098;
+    }
+    .foot .info{margin: auto;
+        width: 70%;
+        order:1 ;
+    }
+   footer .sns{margin: auto; margin-bottom: 15px;}
+
+
+    /* ------------sect7------------------------------------------ */
    
     p.name{font-size: 22px;}
     
@@ -174,6 +300,9 @@ p.name{color: #F9B748;}
         color: #F9B748; font-size: 22px;}
     #sect7 .btn p{position: absolute; left: 50%; transform: translateX(-50%);}
     #sect7 .btn span{display: none;}
+
+
+    
 }
 
 /* 태블릿 */
@@ -191,6 +320,25 @@ p.name{color: #F9B748;}
         margin: 0 auto 50px;
     }
     .sect5title h2{font-size: 32px;}
+    /* ------------sect6---------------------------------------- */
+    h2{font-size: 32px;}
+    p.name{
+    color: #F9B748;
+    font-size: 22px;
+    }
+    #sect6 .soje{font-size: 18px;margin-bottom: 2px;}
+    #sect6 .deje{font-size: 26px; font-weight: 600;margin-bottom: 15px;}
+    #sect6 .like{font-size: 20px;}
+    #sect6 .like span{
+        display: inline-block;
+        width: 18px;
+        height: 16px;
+        margin-right: 5px;
+        background: url(/img/sect6_heart.png) no-repeat;
+        background-position: center;
+        background-size:contain;}
+
+
     /* ------------sect7-------------- */
     p.name{font-size: 22px;}
     #sect7 .inner > h2{font-size: 32px;}
@@ -200,11 +348,13 @@ p.name{color: #F9B748;}
         border-radius: 20px;  color: #999;
         width: 110px; height: 40px; padding-left: 20px;
     }
+    
+
 }
     
 /* 데스크탑 */
 @media screen and (min-width:1288px) {
-    .inner {width: 1200px}
+    .inner {width: 1200px;}
     p.name{font-size: 26px;}
     /* ------------sect2-------------- */
     #sect2 .inner figure{position: static; width: 40%;}
@@ -219,8 +369,15 @@ p.name{color: #F9B748;}
     /* ------------sect5-------------- */
 
     #sect5 .wd{width:1200px;}
+    /* ------------sect6------------------------------ */
+
+    #sect6 .inner{width: 1200px; margin: auto;
+    }
     /* ------------sect7-------------- */
     
     #sect7 .product{display: flex; justify-content: space-between;}
     #sect7 .product li:nth-child(n+3) a img{ margin-top: 0px;}
+
+    /* --------------------footer--------------------------------------- */
+    footer .inner{width: 1200px; margin: auto;}
 }
