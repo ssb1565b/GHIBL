@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script src="script/swiper-bundle.min.js"></script>
     <script src="script/jquery-3.6.0.js"></script>
@@ -19,7 +17,7 @@
             <h1 class="logo"><img src="img/footer_logo.png" alt="logo"></h1>
             <img class="menubar" src="img/top_menubar.png" alt="">
             <ul>
-                <li><a href="#">로그인</a></li>
+                <li><a href="#">로그인송수빈</a></li>
                 <li><a href="#">회원가입</a></li>
             </ul>
         </nav>
@@ -927,7 +925,7 @@
                     <li>
                         <h3>'지브리' 영화 21편 모두 '넷플릭스'에서 볼 수 있다</h3>
                         <h4>스튜디오 지브리 작품은 총 28개 자막과 20개 언어 더빙을 통해 제공된다. 앞서 지난 1월 넷플릭스는 스튜디오 지브리와 독점으로 파트너십을 맺고 콘텐츠를 공급하기로 했다고 발표한 바 있다.</h4>
-                        <span class="date">20.0404</span>
+                        <span class="date">20.04.04</span>
                         <span class="view">조회수 205</span>
                     </li>
                 </ul>
@@ -998,7 +996,21 @@
     <script src="script/jquery-3.6.0.js"></script>
     <script src="script/swiper-bundle.min.js"></script>
     <script>
-     // silde---------------------------------------------------------   
+     // silde---------------------------------------------------------  
+     var swiper = new Swiper(".mySwiper2", {
+            loop: true,
+            loopFillGroupWithBlank: true,
+            speed : 1000,
+            navigation: {
+              nextEl: ".prev_btn",
+              prevEl: ".next_btn",
+            },
+            autoplay: {
+              delay: 3000,
+              disableOntnteraction:false,
+            },
+        });
+
      var swiper = new Swiper(".mySwiper", {
             loop: true,
             loopFillGroupWithBlank: true,
@@ -1018,7 +1030,7 @@
         var swiper = new Swiper(".mySwiper1", {
             loop: true,
             slidesPerView: 6,
-            spaceBetween: 350,
+            spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -1030,7 +1042,8 @@
         });
 
 
-        $('.tab_menu a').click(function(){
+        $('.tab_menu a').click(function(e){
+            e.preventDefault()
             var href=$(this).attr('href')
             $('#sect3 article').removeClass('on')
             $(href).addClass('on')
