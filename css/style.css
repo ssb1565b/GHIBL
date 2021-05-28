@@ -7,6 +7,136 @@
 }
 section{margin-bottom:50px}
 
+
+/* sect1-------------------------------------------------- */
+#sect1{
+    height: 100vh;
+    position: relative;
+}
+
+#sect1 nav{
+    margin: auto;
+    width: 380px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#sect1 nav ul{
+    display: flex;
+}
+
+#sect1 nav ul li{
+    display: none;
+    padding: 0 15px;
+}
+
+#sect1 .logo{
+    display: none;
+}
+
+.menubar{
+    width: 38px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#sect1 .mySwiper2 .swiper-slide::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.741);
+    z-index: 1;
+}
+
+#sect1 .mySwiper2{
+    height: 100vh;
+    position: relative;
+    z-index: 4;
+}
+
+#sect1 .mySwiper2 .swiper-slide{
+    position: relative;
+}
+
+#sect1 .mySwiper2 .swiper-slide >img{
+    width: 100%;
+    height: 100vh;
+}
+
+#sect1 .top_btns button{
+    z-index: 6;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#sect1 .top_btns button img:hover{
+    opacity: .8;
+}
+
+#sect1 .mySwiper2 .swiper-slide .desc{
+    width: 480px;
+    position: absolute;
+    bottom: 110px;
+    left: 260px;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+#sect1 .desc .p1{
+    font-size: 25px;
+    color: #999999;
+}
+
+#sect1 .desc h1{
+    font-size: 90px;
+    color: white;
+    margin-top: 15px;
+}
+
+#sect1 .desc .p3{
+    font-size: 35px;
+    color: white;
+    margin-top: 15px;
+}
+
+#sect1 .desc .more{
+    width: 229px;
+    height: 61px;
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+
+#sect1 .desc .more a{
+    color: white;
+    font-size: 24px;
+}
+
+#sect1 .desc .btn{
+    border: none;
+    background: none;
+}
+
+#sect1 .btn_box{
+    margin-top: 50px;
+    display: flex;
+}
+
+#sect1 .btn_box button{
+    margin-right: 15px;
+}
+
+
 /* sect2-------------------------------------------------- */
 #sect2 .inner{
     display: flex;
@@ -394,7 +524,7 @@ section{margin-bottom:50px}
     bottom: 15px;
     left: 0;
     color: #ffffff;
-    padding: 340px 20px 20px 20px;
+    padding: 320px 20px 20px 20px;
     z-index: 999;
 }
 
@@ -597,8 +727,16 @@ footer .foot {
 /* -------------------------------------------------------------------------- */
 /* 모바일 */
 @media screen and (max-width:767px) {
-    .inner {width: 380px; margin: auto; text-align: center; }
-   /* sect2----------------------------------------------- */
+    .inner {width: 90%; margin: auto; text-align: center; }
+    p.name{ color: #F9B748;}
+/* sect1----------------------------------------------- */
+#sect1 .top_btns{
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    top: 64px;
+}
+/* sect2----------------------------------------------- */
    #sect2 figure{
     display: none;
 }
@@ -656,8 +794,8 @@ p.name{font-size: 22px;text-align: center;}
 }
 #sect6 .inner h2 { font-size: 30px;}
 
-#sect6 .soje{font-size: 16px;margin-bottom: 2px;}
-#sect6 .deje{font-size: 22px; font-weight: 600;margin-bottom: 10px;}
+#sect6 .soje{font-size: 18px;margin-bottom: -2px;}
+#sect6 .deje{font-size: 24px; font-weight: 600;margin-bottom: 10px;}
 #sect6 .like{font-size: 16px;}
 #sect6 .like span{
     display: inline-block;
@@ -690,7 +828,7 @@ p.name{font-size: 22px;text-align: center;}
 
     #sect7 .btn {
         position: relative;
-        width: 380px;
+        width: 90%;
         height: 60px;
         margin: auto;
         border: 1px solid #F9B748;
@@ -710,7 +848,7 @@ p.name{font-size: 22px;text-align: center;}
 
 
  /* #sect8 ------------------------------------------------------- */
- #sect8 .inner {width: 380px; margin: auto;}
+ #sect8 .inner {width: 90%; margin: auto;}
  #sect8 .name {font-size: 30px;}
  #sect8 h2 {font-size: 30px;}
  #sect8 h3 {
@@ -734,7 +872,7 @@ p.name{font-size: 22px;text-align: center;}
      color: #F9B748;
      text-align: center;    }
 /* footer ------------------------------------------------------- */
-footer .inner{width: 380px; margin: auto;}
+footer .inner{width: 90%; margin: auto;}
  footer .footNav { flex-wrap: wrap;}
  footer .footNav li.lv1 {
      width: 100%;
@@ -764,8 +902,112 @@ footer .inner{width: 380px; margin: auto;}
 
 /* 태블릿 */
 @media screen and (min-width:768px) {
+      /* ------------sect1-------------- */
+      #sect1 .logo{
+        display: block;
+        margin-left: -90px;
+        margin-top: -15px;
+    }
+
+    .menubar{
+        display: none;
+    }
+    #sect1 nav{
+        width: 77%;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0 0;
+    }
+    
+    #sect1 nav ul li{
+        display: block;
+    }
+    #sect1 nav ul li a{
+        color: white;
+        font-size: 20px;
+    }
+
+    #sect1 .top_btns{
+        width: 77%;
+        height: 57px;
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #sect1 .mySwiper2 .swiper-slide .desc{
+        width: 77%;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        bottom: 102px;
+        transform: translate(-50%);
+    }
+
+    #sect1 .desc .p1{
+        font-size: 35px;
+        color: #999999;
+    }
+    
+    #sect1 .desc h1{
+        font-size: 120px;
+        color: white;
+        margin-top: 15px;
+        white-space: nowrap;
+    }
+
+    
+    #sect1 .desc .p3{
+        font-size: 30px;
+        color: white;
+        margin-top: 15px;
+    }
+    
+    #sect1 .desc .more{
+        width: 229px;
+        height: 61px;
+        border-radius: 30px;
+        border: 1px solid rgb(255, 255, 255);
+        background: none;
+    }
+    
+    #sect1 .desc .more a{
+        color: white;
+        font-size: 24px;
+    }
+    
+    #sect1 .desc .btn{
+        width: 161;
+        height: 43px;
+        border: none;
+        background: none;
+    }
+
+    #sect1 .desc .btn a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #sect1 .desc .btn a img{
+        width: 100%;
+    }
+    
+    #sect1 .btn_box{
+        margin-top: 50px;
+        display: flex;
+    }
+    
+    #sect1 .btn_box button{
+        margin-right: 15px;
+    }
+
   /* ------------sect2-------------- */
-.inner { width: 568px}
+.inner { width: 80%}
 
 #sect2 p.intro2{
     width: 100%;
@@ -1036,7 +1278,7 @@ footer .inner{width: 380px; margin: auto;}
 
 /* ------------sect5-------------- */
 #sect5 .wd {
-    width: 568px;
+    width: 80%;
     margin: 0 auto 50px;
 }
 
@@ -1045,10 +1287,10 @@ footer .inner{width: 380px; margin: auto;}
 }
 
 /* ------------sect6---------------------------------------- */
-#sect6 .inner{ width: 568px; margin: auto;}
+#sect6 .inner{ width: 80%; margin: auto;}
 
 
-#sect6 .soje{font-size: 18px;margin-bottom: 2px;}
+#sect6 .soje{font-size: 18px;margin-bottom: -2px;}
 #sect6 .deje{font-size: 26px; 
     font-weight: 600;
     margin-bottom: 15px;}
@@ -1079,7 +1321,7 @@ p.name{font-size: 22px;}
     height: 40px;
     padding-left: 20px;}
 /* #sect8 ------------------------------------------------------- */
-#sect8 .inner{width: 568px; margin: auto;}
+#sect8 .inner{width: 80%; margin: auto;}
 #sect8 .right {
     display: flex;
     justify-content: space-between;}
@@ -1106,7 +1348,7 @@ ul {margin-top: 30px;}
     width: 6%;
     height: 9%; }
 /* ---footer------------------------------ */
-footer .inner{width: 568px; margin: auto;}
+footer .inner{width: 80%; margin: auto;}
 footer .lv1{width: 24%;text-align: center;}
 footer .footNav .lv1 a{ font-size: 18px; letter-spacing: -2px ; }
 .footNav ul.lv2 a {font-size: 16px;}
@@ -1121,6 +1363,36 @@ footer .footNav .lv1 a{ font-size: 18px; letter-spacing: -2px ; }
 @media screen and (min-width:1288px) {
     .inner {width: 1200px}
     p.name{font-size: 26px;}
+      /* ------------sect1-------------- */
+      #sect1 nav{
+        max-width: 1200px;
+        width: 62.5%;
+    }
+
+    #sect1 .mySwiper2 .swiper-slide .desc{
+        max-width: 1200px;
+        width: 62.5%;
+        bottom: 102px;
+        transform: translate(-50%);
+    }
+
+    #sect1 .top_btns{
+        max-width: 1200px;
+        width: 62.5%;
+        height: 57px;
+        position: absolute;
+        z-index: 5;
+        bottom: 100px;
+    }
+
+    #sect1 .desc h1 br{
+        display: none;
+    }
+
+    #sect1 .desc h1 .blbr{
+        display: block;
+    }
+
     /* ------------sect2-------------- */
     #sect2 .inner figure{
         position: static;
