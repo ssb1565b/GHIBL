@@ -1329,6 +1329,7 @@ p.name {
     }
 
     #sect1 .top_btns{
+        cursor: pointer;
         width: 77%;
         height: 57px;
         position: absolute;
