@@ -46,6 +46,8 @@
     cursor: pointer;
 }
 
+
+
 #sect1 .mySwiper2 .swiper-slide::after {
     content: '';
     width: 100%;
@@ -90,6 +92,15 @@
     left: 260px;
     transform: translate(-50%);
     z-index: 3;
+}
+
+#sect1 .desc .star{
+    display: flex;
+    margin-top: 20px
+}
+
+#sect1 .desc .star li{
+   padding-right: 10px;
 }
 
 #sect1 .desc .p1 {
@@ -541,9 +552,16 @@
     color: #F9B748;
 }
 
+
+
 #sect4 article .desc1 p{
     font-size: 16px;
     color: #999;
+}
+
+#sect4 article .desc1 p.name{
+    font-size: 22px;
+    color: #F9B748;
 }
 
 #sect4 article #howlbg{
@@ -1673,7 +1691,6 @@ p.name {
         opacity: 1;
     }
 
-    /* #sect4 -------------------------------------------------------------------- */
     #sect4 article{
         display: flex;
         width: 100%;
@@ -1698,22 +1715,35 @@ p.name {
         flex-direction: row-reverse;
     }
 
-    #sect4 article .leftinner .desc1{
+    #sect4 article .leftinner .desc1,
+    #sect4 article .rightinner .desc1{
         padding: 66px 0px 66px 66px;
-        width: 80%;
+        max-width: 80%;
     }
 
     #sect4 article .leftinner .desc2,
     #sect4 article .rightinner .desc2{
         padding: 300px 0px 300px 66px;
-        max-width: 299px;
+        max-width: 80%;
         display: block;
+    }
+
+    #sect4 article .rightinner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #sect4 article .rightinner .desc1,
+    #sect4 article .rightinner .desc2{
+        padding: 300px 108px 300px 0px;
     }
 
     #sect4 article .leftinner .desc3,
     #sect4 article .rightinner .desc3{
         padding: 200px 0 0 0;
-        display: flex;}
+        display: flex;
+    }
 
     #sect4 article .desc1 h2{
         font-size: 24px;
@@ -1726,7 +1756,7 @@ p.name {
     }
 
     #sect4 article .desc1 p.name{
-        font-size: 26px;
+        font-size: 22px;
         color: #F9B748;
     }
     
@@ -1763,7 +1793,6 @@ p.name {
     #sect4 article .desc2 .talk p{
         font-size: 14px;
     }
-
  /* #sect5 -------------------------------------------------------------------- */
     #sect5 p.name{
         color: #F9B748;
@@ -2202,8 +2231,6 @@ p.name {
         z-index: 7;
     }
 
-    /* #sect4 -------------------------------------------------------------------- */
-
     #sect4 article .leftinner .desc1{
         padding: 66px 0px 66px 66px;
         max-width: 600px;
@@ -2216,6 +2243,23 @@ p.name {
     }
 
     #sect4 article .leftinner .desc3{
+        padding: 200px 0 0 0;
+        display: flex;
+    }
+
+    #sect4 article .rightinner .desc1{
+        padding: 66px 66px 66px 0px;
+        max-width: 600px;
+    }
+
+    #sect4 article .rightinner .desc2{
+        width: 100%;
+        padding: 300px 66px 300px 0px;
+        max-width: 600px;
+        display: block;
+    }
+
+    #sect4 article .rightinner .desc3{
         padding: 200px 0 0 0;
         display: flex;
     }
@@ -2268,6 +2312,7 @@ p.name {
         padding-top: 28px;
         font-size: 18px;
     }
+
 /* #sect5 -------------------------------------------------------------------- */
 
     #sect5 .wd{
