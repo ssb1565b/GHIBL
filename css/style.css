@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
-section{margin-bottom:50px}
-
+/* section{margin-bottom:50px} */
+#sect5 .sect5inner, #sect6, #sect7, #sect8{margin-top: 100px;}
 
  /* #sect1 -------------------------------------------------------------------- */
 #sect1 {
@@ -470,14 +470,14 @@ section{margin-bottom:50px}
     border-top: 1px solid rgb(255, 255, 255);
     position: absolute;
     left: 50%;
-    bottom: 15%;
+    bottom: 13%;
     transform: translate(-50%);
     z-index: 8;
 }
 
 #sect3 .tab_menu .tab_inner {
     max-width: 95%;
-    width: 100%;
+    width: 88%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -486,8 +486,8 @@ section{margin-bottom:50px}
 
 #sect3 .tab_menu .tab_inner a {
     color: white;
-    font-size: 10px;
-    margin: 0px 15px;
+    font-size: 14px;
+    margin: 0px 10px;
     position: relative;
     border-radius: 50%;
 }
@@ -496,11 +496,104 @@ section{margin-bottom:50px}
     display: none;
 }
 
+
+/* #sect4 -------------------------------------------------------------------- */
+#sect4 p.name{
+    text-align: left;
+}
+
+#sect4 h2{
+    text-align: left;
+}
+
+#sect4 article #senbg{
+    height: 50vh;
+    width: 100%;
+    background: url(../img/sect4_sen_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sect4 article .desc1,
+#sect4 article .desc2,
+#sect4 article .desc3{
+    padding: 50px 66px;
+}
+
+
+#sect4 article .desc1 h3{
+    font-size: 16px;
+    color: #999999;
+}
+
+
+#sect4 article .desc1 ul{
+    padding: 23px 0;
+    display: flex;
+}
+
+#sect4 article .desc1 ul li{
+    font-size: 16px;
+    padding-right: 17px;
+}
+
+#sect4 article .desc1 ul li span{
+    color: #F9B748;
+}
+
+#sect4 article .desc1 p{
+    font-size: 16px;
+    color: #999;
+}
+
+#sect4 article #howlbg{
+    height: 50vh;
+    width: 100%;
+    background: url(../img/sect4_howl_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#sect4 article #ponyobg{
+    height: 50vh;
+    width: 100%;
+    background: url(../img/sect4_ponyo_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sect4 article .desc2,
+#sect4 article .desc3{
+    display: none;
+}
+
+#sect4 article .desc2 .talk p{
+    padding: 15px 0;
+}
+
+#sect4 article .desc2 p.name{
+    color: #F9B748;
+}
+
+#sect4 article .desc2 ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sect4 article .desc3{
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#sect4 article .desc3 img{
+    width: 50%;
+    vertical-align: top;
+}
+
+
  /* #sect5 -------------------------------------------------------------------- */
 
-#sect5 {
-    padding: 100px 0;
-}
 
 #sect5 .wd {
     position: relative;
@@ -612,11 +705,10 @@ section{margin-bottom:50px}
 }
 
 #sect6 h2 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 #sect6 p.name {
-    margin-top: 50px;
     color: #F9B748;
     font-size: 22px;
 }
@@ -689,7 +781,7 @@ section{margin-bottom:50px}
 }
 
 #sect7 .product a img {
-    width: 100%;
+    width: 80%;
 }
 
 #sect7 .product li:nth-child(n+3) a img {
@@ -788,7 +880,7 @@ section{margin-bottom:50px}
 }
 
 #sect8 .movie,
-ul {
+#sect8 ul {
     margin-top: 50px;
 }
 
@@ -882,6 +974,7 @@ footer .foot {
     p.name {
         color: #F9B748;
     }
+    #sect5 .sect5inner{margin-top: 0px;}
  /* #sect1 -------------------------------------------------------------------- */
     #sect1 .top_btns{
         position: absolute;
@@ -955,7 +1048,7 @@ footer .foot {
     }
 
     #sect5 .swiper-slide {
-        margin: 0 260px;
+        margin: 0 280px;
     }
  /* #sect6 -------------------------------------------------------------------- */
 h2 {
@@ -1011,9 +1104,9 @@ p.name {
     background-size: contain;
 }
  /* #sect7 -------------------------------------------------------------------- */
-    #sect7 {
-        margin-top: 170px;
-    }
+    /* #sect7 {
+        margin-top: 150px;
+    } */
  
      #sect7 .inner h2 {
         font-size: 30px;
@@ -1035,12 +1128,12 @@ p.name {
 
     #sect7 .btn {
         position: relative;
-        width: 90%;
-        height: 60px;
+        width: 100%;
+        height: 70px;
         margin: auto;
         border: 1px solid #F9B748;
         color: #F9B748;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     #sect7 .btn p {
@@ -1056,9 +1149,9 @@ p.name {
 
  /* #sect8 -------------------------------------------------------------------- */
 
-    #sect8 {
-        margin-top: 170px;
-    }
+    /* #sect8 {
+        margin-top: 150px;
+    } */
     #sect8 .inner {
         width: 90%;
         margin: auto;
@@ -1081,6 +1174,7 @@ p.name {
 
     #sect8 h4 {
         font-size: 20px;
+        font-weight: 400;
     }
 
     #sect8 .name,
@@ -1105,12 +1199,13 @@ p.name {
     }
 
     #sect8 .news {
-        margin-top: 170px;
+        margin-top: 100px;
     }
 
     #sect8 .mobileMore {
         display: block;
         margin-top: 50px;
+        font-size: 18px;
     }
 
     #sect8 .mobileMore a {
@@ -1578,6 +1673,97 @@ p.name {
         opacity: 1;
     }
 
+    /* #sect4 -------------------------------------------------------------------- */
+    #sect4 article{
+        display: flex;
+        width: 100%;
+    }
+
+    #sect4 article #senbg,
+    #sect4 article #howlbg,
+    #sect4 article #ponyobg{
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    #sect4 article #senbg,
+    #sect4 article #howlbg,
+    #sect4 article #ponyobg,
+    #sect4 article .txt{
+        width: 50%;
+    }
+
+    #sect4 .howl{
+        flex-direction: row-reverse;
+    }
+
+    #sect4 article .leftinner .desc1{
+        padding: 66px 0px 66px 66px;
+        width: 80%;
+    }
+
+    #sect4 article .leftinner .desc2,
+    #sect4 article .rightinner .desc2{
+        padding: 300px 0px 300px 66px;
+        max-width: 299px;
+        display: block;
+    }
+
+    #sect4 article .leftinner .desc3,
+    #sect4 article .rightinner .desc3{
+        padding: 200px 0 0 0;
+        display: flex;}
+
+    #sect4 article .desc1 h2{
+        font-size: 24px;
+        color: #000000;
+    }
+
+    #sect4 article .desc1 h3{
+        font-size: 14px;
+        color: #999999;
+    }
+
+    #sect4 article .desc1 p.name{
+        font-size: 26px;
+        color: #F9B748;
+    }
+    
+    
+    #sect4 article .desc1 ul{
+        padding: 23px 0;
+        display: flex;
+    }
+    
+    #sect4 article .desc1 ul li{
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    
+    #sect4 article .desc1 ul li span{
+        color: #F9B748;
+    }
+    
+    #sect4 article .desc1 p{
+        font-size: 14px;
+        color: #999;
+    }
+
+    #sect4 article .desc2 ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #sect4 article .desc2 ul li img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #sect4 article .desc2 .talk p{
+        font-size: 14px;
+    }
+
  /* #sect5 -------------------------------------------------------------------- */
     #sect5 p.name{
         color: #F9B748;
@@ -1635,10 +1821,10 @@ p.name {
     p.name {
         font-size: 22px;
     }
-
+/* 
     #sect7{
-        margin-top: 170px;
-    }
+        margin: 150px 0 120px 0;
+    } */
 
     #sect7 .inner>h2 {
         font-size: 32px;
@@ -1656,8 +1842,10 @@ p.name {
     }
 
     #sect7 .product li{
-        width: 100%;
-        padding: 50px;
+        width: 100%;}
+
+    #sect7 .product li img{
+        width: 200px;
     }
 
  /* #sect8 -------------------------------------------------------------------- */
@@ -1677,7 +1865,7 @@ p.name {
     }
 
     #sect8 .news {
-        margin-top: 170px;
+        margin-top: 100px;
     }
 
     #sect8 .wd {
@@ -1691,10 +1879,11 @@ p.name {
 
     .name {
         font-size: 22px;
+        color: #F9B748;
     }
 
     #sect8 h2 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     #sect8 h3 {
@@ -1778,6 +1967,7 @@ p.name {
 
     p.name {
         font-size: 26px;
+        color: #F9B748;
     }
 /* #sect1 -------------------------------------------------------------------- */
       #sect1 nav{
@@ -2011,6 +2201,73 @@ p.name {
         opacity: 1;
         z-index: 7;
     }
+
+    /* #sect4 -------------------------------------------------------------------- */
+
+    #sect4 article .leftinner .desc1{
+        padding: 66px 0px 66px 66px;
+        max-width: 600px;
+    }
+
+    #sect4 article .leftinner .desc2{
+        padding: 300px 0px 300px 66px;
+        max-width: 600px;
+        display: block;
+    }
+
+    #sect4 article .leftinner .desc3{
+        padding: 200px 0 0 0;
+        display: flex;
+    }
+
+    #sect4 article p.name{
+        font-size: 26px;
+    }
+
+    #sect4 article .desc1 h2{
+        font-size: 36px;
+    }
+    
+
+    #sect4 article .desc1 h3{
+        font-size: 20px;
+        color: #999999;
+    }
+    
+    #sect4 article .desc1 ul{
+        padding: 79px 0 0 0;
+        display: flex;
+    }
+    
+    #sect4 article .desc1 ul li{
+        font-size: 18px;
+        padding-right: 17px;
+    }
+    
+    #sect4 article .desc1 ul li span{
+        color: #F9B748;
+    }
+    
+    #sect4 article .desc1 p{
+        font-size: 18px;
+        color: #999;
+        padding-top: 28px;
+    }
+
+    #sect4 article .desc2 ul{
+        justify-content: space-between;
+        padding: 61px 0;
+    }
+
+    #sect4 article .desc2 ul li img{
+        width: 103px;
+        height: 103px;
+    }
+
+    #sect4 article .desc2 .talk p{
+        padding-top: 28px;
+        font-size: 18px;
+    }
 /* #sect5 -------------------------------------------------------------------- */
 
     #sect5 .wd{
@@ -2044,9 +2301,7 @@ p.name {
     }
 
 /* #sect8 -------------------------------------------------------------------- */
-    #sect8{
-    margin-top: 100px;
-    }
+
 
     #sect8 .inner {
         width: 1200px;
@@ -2057,6 +2312,7 @@ p.name {
 
     #sect8 .name {
         font-size: 26px;
+       
     }
 
     #sect8 h2 {
