@@ -1202,7 +1202,7 @@ p.name {
     width: 17px;
     height: 13px;
     margin-right: 5px;
-    background: url(/img/sect6_heart.png) no-repeat;
+    background: url(../img/sect6_heart.png) no-repeat;
     background-position: center;
     background-size: contain;
 }
@@ -1832,7 +1832,7 @@ p.name {
 
     #sect4 article .leftinner .desc3,
     #sect4 article .rightinner .desc3{
-        padding: 200px 0 0 0;
+        padding: 100px 0 0 0;
         display: flex;
     }
 
@@ -1847,7 +1847,7 @@ p.name {
     }
 
     #sect4 article .desc1 p.name{
-        font-size: 22px;
+        font-size: 26px;
         color: #F9B748;
     }
     
@@ -1933,7 +1933,7 @@ p.name {
         width: 18px;
         height: 16px;
         margin-right: 5px;
-        background: url(/img/sect6_heart.png) no-repeat;
+        background: url(../img/sect6_heart.png) no-repeat;
         background-position: center;
         background-size: contain;
     }
@@ -2334,7 +2334,7 @@ p.name {
     }
 
     #sect4 article .leftinner .desc3{
-        padding: 200px 0 0 0;
+        padding: 100px 0 0 0;
         display: flex;
     }
 
@@ -2351,7 +2351,7 @@ p.name {
     }
 
     #sect4 article .rightinner .desc3{
-        padding: 200px 0 0 0;
+        padding: 100px 0 0 0;
         display: flex;
     }
 
@@ -2391,7 +2391,7 @@ p.name {
 
     #sect4 article .desc2 ul{
         justify-content: space-between;
-        padding: 61px 0;
+        padding: 30px 0;
     }
 
     #sect4 article .desc2 ul li img{
