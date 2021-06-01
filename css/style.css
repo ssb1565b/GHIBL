@@ -237,6 +237,7 @@
 
 #sect3 {
     height: 100vh;
+    min-height: 927px;
     position: relative;
     overflow: hidden;
 }
@@ -308,6 +309,7 @@
 #sect3 article .inner {
     width: 100%;
     height: 80%;
+    min-height: 80%;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -599,8 +601,6 @@
 #sect4 article .desc1 ul li span{
     color: #F9B748;
 }
-
-
 
 #sect4 article .desc1 p{
     font-size: 16px;
@@ -989,6 +989,17 @@
     display: none;
 }
 
+
+
+/* ----------------------------- */
+
+
+.topbtn{
+    position: relative; width: 80%; margin: auto; 
+}
+.toptop{position: absolute; width: 150px; height: 200px; right: 0;}
+.toptop img{width: 100%;}
+
 /* footer -------------------------------------------------------------------- */
 footer {
     background: #222223;
@@ -1241,9 +1252,7 @@ p.name {
 
  /* #sect8 -------------------------------------------------------------------- */
 
-    /* #sect8 {
-        margin-top: 150px;
-    } */
+
     #sect8 .inner {
         width: 90%;
         margin: auto;
@@ -1311,6 +1320,13 @@ p.name {
     #sect8 .news.wd ul li {
         text-align: left;
     }
+
+    .topbtn{
+        position: relative; width: 100%; margin: auto; 
+    }
+    .toptop{top: 10px; }
+
+
 /* footer ---------------------------------------------------------------------- */
 
     footer .inner {
@@ -1798,7 +1814,7 @@ p.name {
 
     #sect4 article .leftinner .desc2,
     #sect4 article .rightinner .desc2{
-        padding: 300px 0px 300px 66px;
+        padding: 50px 0px 50px 66px;
         max-width: 80%;
         display: block;
     }
@@ -1811,7 +1827,7 @@ p.name {
 
     #sect4 article .rightinner .desc1,
     #sect4 article .rightinner .desc2{
-        padding: 300px 108px 300px 0px;
+        padding: 50px 108px 50px 0px;
     }
 
     #sect4 article .leftinner .desc3,
@@ -2312,7 +2328,7 @@ p.name {
     }
 
     #sect4 article .leftinner .desc2{
-        padding: 300px 0px 300px 66px;
+        padding: 100px 0px 100px 66px;
         max-width: 600px;
         display: block;
     }
@@ -2329,7 +2345,7 @@ p.name {
 
     #sect4 article .rightinner .desc2{
         width: 100%;
-        padding: 300px 66px 300px 0px;
+        padding: 100px 66px 100px 0px;
         max-width: 600px;
         display: block;
     }
