@@ -8,6 +8,7 @@
 /* section{margin-bottom:50px} */
 #sect5 .sect5inner, #sect6, #sect7, #sect8{margin-top: 100px;}
 
+
  /* #sect1 -------------------------------------------------------------------- */
 #sect1 {
     height: 100vh;
@@ -146,7 +147,54 @@
 #sect1 .btn_box button {
     margin-right: 15px;
 }
-
+#sect1 .backBg_1 {
+    background-image: url(../img/sect1_img1.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_2 {
+    background-image: url(../img/sect1_img2.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_3 {
+    background-image: url(../img/sect1_img3.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_4 {
+    background-image: url(../img/sect1_img4.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_5 {
+    background-image: url(../img/sect1_img5.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_6 {
+    background-image: url(../img/sect1_img6.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_7 {
+    background-image: url(../img/sect1_img7.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sect1 .backBg_8 {
+    background-image: url(../img/sect1_img8.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
 
  /* #sect2 -------------------------------------------------------------------- */
 #sect2 .inner {
@@ -803,7 +851,7 @@
     width: 18px;
     height: 16px;
     margin-right: 5px;
-    background: url(/img/sect6_heart.png) no-repeat;
+    background: url(../img/sect6_heart.png) no-repeat;
     background-position: center;
     background-size: contain;
 }
